@@ -1,4 +1,4 @@
-/* General styles */
+/* Root styles */
 
 :root {
   --primary-background-color: #ffffff;
@@ -7,6 +7,46 @@
   --primary-text-color: #434455;
   --secondary-text-color: #ffffff;
 }
+
+/* Reset */
+
+.list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* General styles */
 
 .visually-hidden {
   position: absolute;
@@ -30,37 +70,15 @@ body {
   font-size: 16px;
 }
 
-/* Reset */
-
-.list {
-  list-style: none;
-  padding-left: 0;
-  margin: 0;
+.container {
+  width: 1152px;
+  padding: 0 15px;
+  margin: 0 auto;
+  outline: tomato solid 1px;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin-top: 0;
-}
-
-.link {
-  text-decoration: none;
-  color: inherit;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-address {
-  font-style: normal;
+.section {
+  padding: 120px 0;
 }
 
 /* Logo */
@@ -86,7 +104,6 @@ address {
 
 .site-nav .link {
   color: var(--dark);
-  text-decoration: none;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -104,8 +121,6 @@ address {
 /* Contacts */
 
 .contact {
-  color: inherit;
-  text-decoration: none;
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
@@ -121,22 +136,24 @@ address {
 /* Hero */
 
 .hero {
+  padding: 192px 0;
+
   background-color: var(--dark);
+  text-align: center;
 }
 
 .hero-title {
   color: var(--secondary-text-color);
+  text-align: center;
   font-weight: 500;
   font-size: 56px;
   line-height: 1.07;
-  text-align: center;
   letter-spacing: 0.02em;
 }
 
 .btn {
   color: var(--secondary-text-color);
   background-color: var(--primary-brand);
-  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -191,6 +208,12 @@ address {
   background-color: #f4f4fd;
 }
 
+/* Advantages */
+
+.advantages {
+  padding-bottom: 0px;
+}
+
 /* PORTFOLIO.HTML */
 /* MAIN CONTENT */
 
@@ -240,7 +263,16 @@ address {
 
 /* FOOTER */
 .footer {
+  padding: 100px 0;
   background-color: var(--dark);
+}
+
+.logo-motto {
+  max-width: 264px;
+}
+
+.footer .logo {
+  padding-bottom: 16px;
 }
 
 .footer .logo,
