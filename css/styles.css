@@ -31,7 +31,6 @@ p {
 .link {
   text-decoration: none;
   color: inherit;
-  display: inline-block;
 }
 
 img {
@@ -81,6 +80,7 @@ body {
 /* Logo */
 
 .logo {
+  display: inline-block;
   margin-right: 77px;
 
   color: var(--dark);
