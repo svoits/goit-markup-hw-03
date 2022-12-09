@@ -6,6 +6,7 @@
   --dark: #2e2f42;
   --primary-text-color: #434455;
   --secondary-text-color: #ffffff;
+  --primary-margin-btwn-items: 24px;
 }
 
 /* Reset */
@@ -216,6 +217,7 @@ body {
 }
 
 /* Sections - General styles */
+/* Advantages; What are we doing; Our team - GENERAL */
 
 .section-title {
   padding-bottom: 72px;
@@ -250,34 +252,50 @@ body {
   background-color: #f4f4fd;
 }
 
-/* Advantages; What are we doing */
-
 .advantages {
   padding-bottom: 0px;
 }
 
 .advantages .list,
-.products .list {
+.products .list,
+.team .list {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -24px;
+  margin-left: var(-1 * --primary-margin-btwn-items);
 }
 
 .advantages .item {
-  flex-basis: calc(100% / 4 - 24px);
-  margin-left: 24px;
+  flex-basis: calc(100% / 4 - var(--primary-margin-btwn-items));
+  margin-left: var(--primary-margin-btwn-items);
 }
 
 /* What are we doing */
 
 .products .item {
-  flex-basis: calc(100% / 3 - 24px);
-  margin-left: 24px;
+  flex-basis: calc(100% / 3 - var(--primary-margin-btwn-items));
+  margin-left: var(--primary-margin-btwn-items);
 
   background: linear-gradient(0deg, rgba(77, 90, 229, 0.1), rgba(77, 90, 229, 0.1)), url(photo-1545235617-7a424c1a60cc.jpg);
   background-blend-mode: soft-light, normal;
 
   border: 1px solid #e7e9fc;
+}
+
+/* Our team */
+
+.team .item {
+  flex-basis: calc(100% / 4 - var(--primary-margin-btwn-items));
+  margin-left: var(--primary-margin-btwn-items);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team .item-description {
+  text-align: center;
+  padding: 32px 16px;
+  border-radius: 0px 0px 4px 4px;
+
+  background-color: var(--primary-background-color);
 }
 
 /* PORTFOLIO.HTML */
