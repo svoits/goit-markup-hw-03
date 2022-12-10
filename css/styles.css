@@ -301,7 +301,7 @@ body {
 .filter-btns {
   display: flex;
   justify-content: center;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 
 .filter-btn {
