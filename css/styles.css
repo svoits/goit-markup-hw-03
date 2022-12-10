@@ -273,9 +273,6 @@ body {
   flex-basis: calc(100% / 3 - var(--primary-margin-btwn-items));
   margin-left: var(--primary-margin-btwn-items);
 
-  background: linear-gradient(0deg, rgba(77, 90, 229, 0.1), rgba(77, 90, 229, 0.1)), url(photo-1545235617-7a424c1a60cc.jpg);
-  background-blend-mode: soft-light, normal;
-
   border: 1px solid #e7e9fc;
 }
 
