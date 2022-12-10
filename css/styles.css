@@ -68,8 +68,8 @@ body {
 }
 
 .container {
-  width: 1152px;
-  padding: 0 12px;
+  width: 1158px;
+  padding: 0 15px;
   margin: 0 auto;
 }
 
@@ -176,8 +176,7 @@ body {
 
 .hero-title {
   width: 492px;
-  padding-bottom: 48px;
-  margin: 0 auto;
+  margin: 0 auto 48px;
 
   color: var(--secondary-text-color);
   font-weight: 500;
@@ -219,7 +218,7 @@ body {
 /* Advantages; What are we doing; Our team - GENERAL */
 
 .section-title {
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 
   color: var(--dark);
   font-weight: 500;
@@ -232,7 +231,7 @@ body {
 
 .advantage,
 .team-name {
-  padding-bottom: 8px;
+  margin-bottom: 8px;
 
   color: var(--dark);
   font-weight: 500;
@@ -260,7 +259,7 @@ body {
 .team .list {
   display: flex;
   flex-wrap: wrap;
-  margin-left: var(-1 * --primary-margin-btwn-items);
+  margin-left: calc(-1 * var(--primary-margin-btwn-items));
 }
 
 .advantages .item {
@@ -368,7 +367,7 @@ body {
 }
 
 .project-title {
-  padding-bottom: 8px;
+  margin-bottom: 8px;
 
   color: var(--dark);
   font-weight: 600;
@@ -394,7 +393,8 @@ body {
 }
 
 .footer .logo {
-  padding-bottom: 16px;
+  margin-bottom: 16px;
+  margin-right: 0;
 }
 
 .footer .logo,
